@@ -29,7 +29,7 @@ public class Student {
     public Character Sex;
     public Boolean Aidiplomadefacultate;
 
-@Test
+    @Test
     public void PrezentareStudent() {
         Nume = "Alex";
         Prenume = "Briciu";
@@ -42,28 +42,35 @@ public class Student {
 
         //System.out.println(Nume+"  "+Prenume+"  "+Varsta+"  "+Adresa);
         //System.out.println(Inaltime);
-        System.out.println("Numele studentului este: "+Nume);
-        System.out.println("Prenumele studentului este: "+Prenume);
-        System.out.println("Varsta studentului este: "+Varsta);
-        System.out.println("Adresa studentului este: "+Adresa);
-        System.out.println("Inaltimea studentului este: "+Inaltime);
-        System.out.println("Greutatea studentului este: "+Greutate);
-        System.out.println("Sexul studentului este: "+Sex);
-        System.out.println("Are studentul diploma: "+ Aidiplomadefacultate);
-
+        System.out.println("Numele studentului este: " + Nume);
+        System.out.println("Prenumele studentului este: " + Prenume);
+        System.out.println("Varsta studentului este: " + Varsta);
+        System.out.println("Adresa studentului este: " + Adresa);
+        System.out.println("Inaltimea studentului este: " + Inaltime);
+        System.out.println("Greutatea studentului este: " + Greutate);
+        System.out.println("Sexul studentului este: " + Sex);
+        System.out.println("Are studentul diploma: " + Aidiplomadefacultate);
 
         calculMedie();
+        System.out.println(getSalariu());
+
 
     }
 
-    public void calculMedie(){
-      Integer nota1=8;
-      Integer nota2=6;
-      Integer nota3=10;
-      Integer medie=(nota1+nota2+nota3)/3;
-      System.out.println("Media studentului este: "+medie);
+    public void calculMedie() {
+        Integer nota1 = 8;
+        Integer nota2 = 6;
+        Integer nota3 = 10;
+        Integer medie = (nota1 + nota2 + nota3) / 3;
+        System.out.println("Media studentului este: " + medie);
 
 
+    }
+
+    public Integer getSalariu () {
+
+        Integer salariu = 5000;
+        return salariu;
 
     }
 
