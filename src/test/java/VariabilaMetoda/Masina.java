@@ -21,11 +21,13 @@ public class Masina {
     }
     //metoda
 
-    public void dateMasina(String param1, String param2, Integer param3) {
+    public void dateMasina(String marcaMasina, String modelMasina, Integer anulFabricatieiMasinii) {
 
-        marca = param1;
-        model = param2;
-        anFabricatie = param3;
+        marca = marcaMasina;
+        model = modelMasina;
+        anFabricatie = anulFabricatieiMasinii;
+
+
 
         System.out.println("Marca masinii este: " + marca);
         System.out.println("Modelul masinii este: " + model);
