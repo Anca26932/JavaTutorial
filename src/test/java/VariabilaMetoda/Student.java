@@ -53,6 +53,7 @@ public class Student {
 
         calculMedie();
         System.out.println(getSalariu());
+        ZileSaptamana(3);
 
 
     }
@@ -64,7 +65,6 @@ public class Student {
         Integer medie = (nota1 + nota2 + nota3) / 3;
         System.out.println("Media studentului este: " + medie);
 
-
     }
 
     public Integer getSalariu () {
@@ -74,4 +74,24 @@ public class Student {
 
     }
 
+    //Exemplu switch case
+
+    public void ZileSaptamana (Integer zi) {
+        switch (zi) {
+            case 1:
+                System.out.println("Azi este luni");
+                break;
+            case 2:
+                System.out.println("Azi este marti");
+                break;
+            case 3:
+                System.out.println("Azi este miercuri");
+                break;
+            case 4:
+                System.out.println("Azi este joi");
+                break;
+            default:
+                System.out.println("Nu mai sunt zile");
+        }
+    }
 }
