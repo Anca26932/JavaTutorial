@@ -35,7 +35,6 @@ public class Masina {
 
     }
 
-
     //calculam media a doua numere
 
     public void calculMedie(Double nota1, Double nota2) {
