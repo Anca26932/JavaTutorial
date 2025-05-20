@@ -12,6 +12,9 @@ public class OOPTest {
         Angajat Mihai = new Angajat("Vasile","Mitrea",34,"Endava",7,26);
         Mihai.infoAngajat();
 
+        Mihai.promovare();
+        Mihai.getPrenume();
+
 
 
 

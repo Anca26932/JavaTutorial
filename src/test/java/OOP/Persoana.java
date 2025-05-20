@@ -10,11 +10,18 @@ public class Persoana {
 //    in mom in care se aplica mostenirea, copilul are vizibilitate asupra variabilelor/metodelor din parinte
 //    constructorul din parinte in copil se apeleaza cu super
 
-    public String nume;
+//    Incapsulare= procesul prin care tinem departe anumite informatii ca ele sa nu poat afi modificate
+//    Facem variabilele/metodele din public in privat
+//    Private= access control care restrictioneaza accesul doar in clasa respectiva
+//    doar parintele are acces la informatie
+//    ca sa extragem /modificam o valaore a unei variabile private ne folosim de metode get/set
+//
 
-    public String prenume;
+    private String nume;
 
-    public Integer varsta;
+    private String prenume;
+
+    private Integer varsta;
 
     public Persoana(String nume, String prenume, Integer varsta) {
         this.nume = nume;
@@ -26,5 +33,25 @@ public class Persoana {
         System.out.println("Prenumele este " + prenume);
         System.out.println("Varsta este" + varsta);
 
+    }
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public Integer getVarsta() {
+        return varsta;
+    }
+
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
+
+    public void setVarsta(Integer varsta) {
+        this.varsta = varsta;
     }
 }
