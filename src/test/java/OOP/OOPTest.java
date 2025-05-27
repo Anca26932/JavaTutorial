@@ -9,6 +9,7 @@ public class OOPTest {
         Student Anca = new Student("Mirela","Creta",26,"UTCN",2,true);
         Anca.infoSudent();
         Anca.mananca();
+        Anca.infoPersoana();
 
         Angajat Mihai = new Angajat("Vasile","Mitrea",34,"Endava",7,26);
         Mihai.infoAngajat();
@@ -16,8 +17,12 @@ public class OOPTest {
         Mihai.marire(10);
         Mihai.marire("senior");
 
+        Mihai.firma = "Endava";
+
+
 //        Mihai.promovare();
 //        Mihai.getPrenume();
 //        Mihai.mananca();
     }
+
 }
